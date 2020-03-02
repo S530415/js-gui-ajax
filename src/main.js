@@ -19,7 +19,9 @@ const updateWithAdd = async (event) => {
       const s = document.querySelector('#guest').value.replace(regex, '')
       const i = parseInt(document.querySelector('#firstNumber').value)
       const j = parseInt(document.querySelector('#secondNumber').value)
+      const k = document.querySelector('#sentence').value.replace(regex, '')
       const ans = `${s}, your sum is ${add(i, j)}.`
+      const answ = `Your character count is ${subtract(250, sentence.length().}
       document.querySelector('#result').innerHTML = ans
     }
   } catch (error) { console.error(error) }

@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 
+<!-- 25 - Sentence Checker
+Given a user sentence and a maxLength=250 characters, display how many more characters the user can type.
+input 1 type - string
+input 1 sentence
+
+function: maxLength - sentence.length -->
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,6 +67,11 @@
           <label for="secondNumber">Enter second number (1 to 100):</label>
           <input id="secondNumber" type="number" min="1" max="100" value="12">
           <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="sentence">How long is your sentence (max of 250 characters):</label>
+          <input id="sentence" type="text" minlength="1" maxlength="250" value="">
         </fieldset>
 
       </div>
