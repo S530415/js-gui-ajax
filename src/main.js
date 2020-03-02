@@ -1,4 +1,5 @@
 const add = (x, y) => { return x + y }
+const subtract = (x, y) => {return x - y}
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
@@ -52,5 +53,5 @@ document.addEventListener('click', event => {
 })
 
 document.addEventListener('click', event => {
-  if (event.target && event.target.id === 'addButton') { updateWithSub(event) }
+  if (event.target && event.target.id === 'getSentenceLength') { updateWithSub(event) }
 })
