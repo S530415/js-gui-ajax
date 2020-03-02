@@ -10,7 +10,15 @@ const validate = async (event) => {
     event.target.focus()
   }
 }
-
+const updateWithSub = async (event) => {
+  try {
+    document.querySelector('#result').innerHTML = ''
+    if (document.querySelector('#sentence').checkValidity(){
+      const h = sentence.length();
+      const answ = `Your character count is ${subtract(250, h()}.
+    }
+  }
+}
 const updateWithAdd = async (event) => {
   try {
     document.querySelector('#result').innerHTML = ''
@@ -21,7 +29,6 @@ const updateWithAdd = async (event) => {
       const j = parseInt(document.querySelector('#secondNumber').value)
       const k = document.querySelector('#sentence').value.replace(regex, '')
       const ans = `${s}, your sum is ${add(i, j)}.`
-      const answ = `Your character count is ${subtract(250, sentence.length().}
       document.querySelector('#result').innerHTML = ans
     }
   } catch (error) { console.error(error) }
@@ -42,4 +49,8 @@ document.addEventListener('click', event => {
 
 document.addEventListener('click', event => {
   if (event.target && event.target.id === 'getJokeButton') { updateWithJoke(event) }
+})
+
+document.addEventListener('click', event => {
+  if (event.target && event.target.id === 'addButton') { updateWithSub(event) }
 })
